@@ -1,0 +1,56 @@
+.contact-content {
+    height: 100vh;
+    margin-top: 32px;
+    padding: 9px;
+    position: relative;
+    overflow: hidden;
+    font-family: cursive;
+}
+
+.contact-content::after {
+    content: "";
+    background-image: url("/img/7.svg");
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: inherit;
+    opacity: 0.15;
+    border-radius: 12px;
+    z-index: -1;
+}
+
+.form-box input,
+textarea {
+    width: 52vw;
+    padding: 0px 6px;
+    margin: 7px 0;
+    font-size: 18px;
+    font-family: var(--font1);
+    border: 2px solid var(--main-bg-color);
+    border-radius: 5px;
+}
+
+/* #alert {
+    display: none;
+} */
+
+/* Dismissable Alerts */
+#alert {
+    display: none;
+    justify-content: space-between;
+    padding: 8px 15px;
+    color: white;
+    transition: all ease-in-out 0.45s;
+    background-color: rgb(101, 204, 32);
+}
+
+#cross {
+    font-size: 22px;
+}
+
+
+#cross:hover {
+    font-weight: bolder;
+    color: #000;
+    cursor: pointer;
+}

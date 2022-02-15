@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/teachableMachine.css">
+    <script defer src="js/script.js"></script>
+    <script defer src="https://kit.fontawesome.com/fe08869b08.js" crossorigin="anonymous"></script>
+
+    <title>iEmotions - all you need after your day</title>
+</head>
+
+<body id="body">
+    <header>
+        <nav>
+            <div class="nav-left">
+                <div id="ham" onclick="toggleSidebar();">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+                <div class="logo">
+                    <a href="/index.html">
+                        <span>iEmotions</span>
+                    </a>
+                </div>
+
+                <ul class="menu pc">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/teachableMachine.html">About</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <form class="form-search form-search-pc pc" action="search.html" method="get">
+                    <input name="search-query" class="form-input" type="text" placeholder="Search">
+                    <button class="btn" type="submit">Search</button>
+                </form>
+                <div class="search-icon mobile">
+                    <i class="fa-solid fa-magnifying-glass fa-lg mobile" onclick="toggleSearch()"></i>
+                </div>
+                <div>
+                    <i onclick="user()" class="fas fa-user-circle fa-2x user"></i>
+
+                    <div class="options" style="top: -146px;">
+                        <div><a href="login.php">Login</a></div>
+                        <div><a href="signup.php">Sign Up</a></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <form id="form-search-mobile" action="search.html" method="get" style="display: none;">
+            <input name="search-query" class="form-search-inp" type="text" placeholder="Search">
+            <button class="btn" type="submit">Search</button>
+        </form>
+        <div id="sidebar" style="left: -350px;">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.php">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="max-width">
+        <div class="content">
+            <div class="content-left">
+                <h1>iEmotions - all you need after your day</h1>
+                <p>Emotion management is the ability to be aware of and constructively handle both positive and
+                    challenging emotions. Through out-of-school programs, youth learn how to process and manage the
+                    emotions they develop during group activities and projects, and those they experience through other
+                    events in their lives..</p>
+            </div>
+            <div class="content-right">
+                <img src="/img/2.jpg" alt="home.jpg">
+            </div>
+        </div>
+        <div class="article-container">
+            <h1>Read our featured content -</h1>
+            <br>
+            <div class="article">
+                <div class="img">
+                    <img src="img/3.jpg" alt="">
+                </div>
+                <div class="about">
+                    <h2>What is anger?</h2>
+                    <p>Anger is an emotion characterized by antagonism toward someone or something you feel has
+                        deliberately done you wrong.</p>
+                    <p>Anger is an emotion characterized by antagonism toward someone or something you feel has
+                        deliberately done you wrong.</p>
+                </div>
+            </div>
+            <br>
+            <div class="article">
+                <div class="img">
+                    <img src="img/4.jpg" alt="">
+                </div>
+                <div class="about">
+                    <h2>Causes of why people get angry</h2>
+                    <p>There are many common triggers for anger, such as losing your patience, feeling as if your
+                        opinion or efforts aren't appreciated, and injustice.
+                        Other causes of anger include memories of traumatic or enraging events and worrying about
+                        personal problems.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <div class="article">
+                <div class="img">
+                    <img src="img/5.jpg" alt="">
+                </div>
+                <div class="about">
+                    <h2>Consequences of anger</h2>
+                    <p>The long-term physical effects of uncontrolled anger include increased anxiety, high blood
+                        pressure and headache.
+                        Anger can be a positive and useful emotion, if it is expressed appropriately.
+                        Long-term strategies for anger management include regular exercise, learning relaxation
+                        techniques and counselling. </p>
+                </div>
+            </div>
+            <br>
+            <div class="article">
+                <div class="img">
+                    <img src="img/6.jpg" alt="">
+                </div>
+                <div class="about">
+                    <h2>How to control anger?</h2>
+                    <p>1. Think before you speak. In the heat of the moment, it's easy to say something you'll later
+                        regret.</p>
+                    <p>2. Once you're calm, express your anger</p>
+                    <p>3. Get some exercise</p>
+                    <p>4. Take a timeout</p>
+                    <p>5. Identify possible solutions</p>
+                    <p>6. Stick with 'I' statements</p>
+                    <p>7. Don't hold a grudge</p>
+                    <p>8. Use humor to release tension</p>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br>
+        <br>
+        <hr>
+        <h1 class="heading">Teachable Machine Image Model</h1>
+        <div class="content">
+            <div class="content-left">
+                <h2>Try out our new teachable machine.</h2>
+                <p>This is our all new teachable machine which will help you control your anger digitally with ease.
+                    This will entertain and help you feel beter eventually. It is made by google's all new node baser
+                    teachable Machine concept.
+                </p>
+            </div>
+            <div class="content-right">
+                <img src="img/1.jpg" alt="">
+            </div>
+        </div>
+        <div class="trynow" style="margin-bottom: 10px;">
+            <button class="btn"><a href="/teachableMachine.html">Try Now!</a></button>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright &copy; iEmotions.in</p>
+        <p> Made by - Animesh Jha(VIII - C), Shail(VII) from Modern Public School, Delhi</p>
+        <div>Vector Credits:
+            <a href="https://www.vecteezy.com">Vecteezy,</a>
+            <a href='https://www.freepik.com'> Freepik,</a>
+            <a href='https://www.fontawesome.com'> FontAwesome,</a>
+            <a href='https://www.wikiexpert.com'> WikiExpert,</a>
+            <a href='https://www.pinterest.com'> Pinterest</a>
+        </div>
+    </footer>
+</body>
+
+</html>

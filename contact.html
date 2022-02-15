@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script defer src="js/script.js"></script>
+    <script defer src="https://kit.fontawesome.com/fe08869b08.js" crossorigin="anonymous"></script>
+
+    <title>iEmotions | Contact</title>
+</head>
+
+<body id="body">
+    <header>
+        <nav>
+            <div class="nav-left">
+                <div id="ham" onclick="toggleSidebar()">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+                <div class="logo">
+                    <a href="/index.html">
+                        <span>iEmotions</span>
+                    </a>
+                </div>
+
+                <ul class="menu pc">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <form class="form-search form-search-pc pc" action="search.html" method="get">
+                    <input name="search-query" class="form-input" type="text" placeholder="Search">
+                    <button class="btn" type="submit">Search</button>
+                </form>
+                <div class="search-icon mobile">
+                    <i class="fa-solid fa-magnifying-glass fa-lg mobile" onclick="toggleSearch();"></i>
+                </div>
+                <div>
+                    <i class="fas fa-user-circle fa-2x user"></i>
+
+                    <div class="options" style="top: -146px;">
+                        <div><a href="login.php">Login</a></div>
+                        <div><a href="signup.php">Sign Up</a></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <form id="form-search-mobile" action="search.html" method="get" style="display: none;">
+            <input name="search-query" class="form-search-inp" type="text" placeholder="Search">
+            <button class="btn" type="submit">Search</button>
+        </form>
+        <div id="alert">
+            <div id="message"> Thankyou for letting us know how we can help you!</div>
+            <div id="cross" onclick="hide()">&times</div>
+        </div>
+        <div id="sidebar" style="left: -350px;">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="contact-content font1 max-width">
+            <div class="max-width mx-1">
+                <h2>Feel Free to Contact Us</h2>
+                <div class="contact-form">
+                    <form method="POST">
+                        <div class="form-box">
+                            <input type="text" name="name" placeholder="Enter Your Name">
+                        </div>
+                        <div class="form-box">
+                            <input maxlength="10" placeholder="What's your age?">
+                        </div>
+                        <div class="form-box">
+                            <input type="email" name="email" placeholder="Enter Your Email Id">
+                        </div>
+                        <div class="form-box">
+                            <textarea name="concern" maxlength="1000" id="" cols="30" rows="10"
+                                placeholder="How may we help you?"></textarea>
+                        </div>
+                        <div class="form-box">
+                            <button type="submit" class="btn" onclick="alert();"
+                                style="margin-right: 3px;">Submit</button>
+                            <button type="reset" class="btn">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright &copy; iEmotions.in</p>
+        <p> Made by - Animesh Jha(VIII - C), Shail(VII) from Modern Public School, Delhi</p>
+        <div>Vector Credits:
+            <a href="https://www.vecteezy.com">Vecteezy,</a>
+            <a href='https://www.freepik.com'> Freepik,</a>
+            <a href='https://www.fontawesome.com'> FontAwesome,</a>
+            <a href='https://www.wikiexpert.com'> WikiExpert,</a>
+            <a href='https://www.pinterest.com'> Pinterest</a>
+        </div>
+    </footer>
+</body>
+
+</html>
