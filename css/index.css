@@ -45,7 +45,6 @@ h3{
 
 .img {
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 320px;
     margin: 0 10px 0 0;
@@ -58,6 +57,5 @@ h3{
 .about{
     flex-direction: column;
     display: flex;
-    justify-content: center;
     align-items: center;
     
