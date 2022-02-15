@@ -54,6 +54,13 @@
     .article {
         display: block;
     }
+    
+    .img{
+        width: 100%;
+    }
+    .about{
+        width: 100%;
+    }
 
 }
 
