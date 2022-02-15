@@ -53,10 +53,4 @@ h3{
 
 .img img {
     width: 300px;
-}
-
-.about{
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    
+}   
