@@ -41,12 +41,10 @@ h3{
 
 .article {
     display: flex;
-    justify-content: center;
 }
 
 .img {
     display: flex;
-    align-items: center;
     width: 320px;
     margin: 0 10px 0 0;
     justify-content: center;
