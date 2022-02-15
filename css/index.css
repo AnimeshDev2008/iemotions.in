@@ -37,6 +37,8 @@ h3{
     background-color: rgb(211, 102, 202);
     padding: 10px 15px;
     margin: 20px 0;
+    display: flex;
+    justify-content: center;
 }
 
 .article {
